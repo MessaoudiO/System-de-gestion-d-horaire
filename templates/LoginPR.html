@@ -1,0 +1,106 @@
+{% block title %}
+login Etudiant
+{% endblock title %}
+{% block content %}
+<html>
+  <head>
+  <style>
+    
+            .body {
+          background-image: url('../static/images/teccartimg.jpg');
+      background-color: white;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          width: 90%;
+          height: 890px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-right: 0px;
+          float: right;
+           overflow-x: hidden;
+          }
+  
+          .auto-style1 {
+              color: #0277ca;
+              font-size: 50px;
+              width: 30%;
+              margin-bottom: 3px;
+              height: 37px;
+              text-align: center;
+              margin-top: 6%;
+              margin-left: 10%;
+              display: inline;
+          }
+  
+      
+  
+          .auto-style3 {
+              margin-top: 100px;
+              padding-top: 0px;
+              border: 0.3px solid green;
+              width: 210px;
+              text-align: center;
+              margin-right: 25%;
+          }
+  
+  
+      
+  </style>
+  <link href="../static/assets/css/Style.css" rel="stylesheet"  type="text/css"/>
+  
+  </head>
+  
+  <body>
+  <body class="body" style="width: 1710px">
+      <div class="login">
+          <form id="form1" class="form-horizontal"  action="/loginPR" method="post">
+              <div class="header">
+                  <h1 class="auto-style1">
+                      <img id="imgLogo" class="image" Height="85px" Width="108px" DescriptionUrl="~/images/omnivox.png" src="../static/images/omnivox.png">Omnivox</h1>
+                  <hr class="auto-style3" />
+                  <div class="subtitle">Institut Teccart - Prof</div>
+              </div>
+              <div class="container">
+              <div class="auto-style4">
+              <label class="col-md-4 control-label" for="username">Numero DA</label> 
+                  <div class="col-md-5">
+          <input id="username" name="username" type="text" placeholder="" class="form-control input-md" required="">
+          </div>
+                  </div>
+                  <br /><br />
+                  <div class="auto-style4">
+                    <label class="col-md-4 control-label" for="password">Mot de passe:</label> 
+                        <div class="col-md-5">
+                        <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+                </div>
+  
+                <br>
+                <br>
+
+
+                 {% with messages=get_flashed_messages(with_categories=true) %}
+                 {% if messages %}
+                 {% for category, message in messages %}
+                 
+                 <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+                     {{message}}
+                 
+                 
+                 </div>
+                 {% endfor %}
+                 {% endif %}
+                 {% endwith %}
+      
+                  
+              </div>
+                  <div  >
+                  
+                  <button type="submit" class="btnLogin">Login</button>
+                  
+                  
+                   </div>
+               </div>
+          </form>
+  </body>
+  </html>
+  {% endblock content %}

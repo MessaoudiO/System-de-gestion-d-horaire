@@ -1,0 +1,97 @@
+﻿.form {
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+.login {
+    float: right;
+    width: 30%;
+    height: 105.5%;
+    background-color: #FFFAF0;
+    opacity: 0.9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.subtitle {
+    margin-left: 34%;
+    color: #0277ca;
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+
+
+.image {
+    float: left;
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+.header h1 {
+    position: relative;
+    margin-left: 20px;
+    top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 13%;
+    margin-top: 40%;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.txt {
+    width: 350px;
+    height: 45px;
+    background-color: #e7feff;
+    border: none;
+    border-bottom: 2px solid black;
+    /* opacity:0.7;*/
+    font-size: 22px;
+}
+
+    .txt:focus {
+        outline: none;
+        border-bottom: 2px solid #0000cd;
+    }
+
+.btnLink {
+    margin-top: 30%;
+}
+
+.btn {
+    font-size: 18px;
+    color: #666666;
+}
+
+    .btn:hover {
+        color: #0000cd;
+        cursor: pointer;
+    }
+
+    .btn:visited {
+        color: none;
+    }
+
+.btnLogin {
+    width: 130px;
+    height: 50px;
+    background-color: #00b800;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+    right: 78px;
+}
+
+    .btnLogin:hover {
+        background-color: #006400;
+        box-shadow: 0 0 11px rgba(33,33,33,1);
+    }
